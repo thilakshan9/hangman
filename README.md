@@ -14,3 +14,8 @@ Used OOP to contain the thrid milestone of the hangman game and added methods mo
 
 # Milestone 4
 I defined the whole game by running a while True loop inside a function that will run the ask_for_input method in the Hangman class is the letters have not all been guessed, tell the player that they have lost if they have run out of lives or tell them they have won if they managed to guess the word correctly.
+
+# Summary
+I made use of the fundamentals of python as well as basic object oriented programming to come up with this solution. I can improve this solution by potentially adding static methods as well as displaying all of the attributes in the class to the user.
+
+## By Thilakshan Balasubramaniam
