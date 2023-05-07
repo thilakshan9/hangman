@@ -17,8 +17,8 @@ class Hangman:
             print(f"Good guess! {guess} is in the word.")
             for letter in self.word:
                 if guess == letter:
-                    letter_idx = self.word.index(letter)
-                    self.word_guessed[letter_idx] = guess
+                    self.word_guessed[i] = guess
+                i += 1
             self.num_letters -= 1
         else:
             self.num_lives -= 1
@@ -31,7 +31,7 @@ class Hangman:
             if len(guess) != 1 or guess.isalpha() == False:
                 print("Invalid letter. Please, enter a single alphabetical character.")
             elif guess in self.list_of_guesses:
-                print("You already tried that letter")
+                print("You already tried that letter!")
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
