@@ -18,8 +18,12 @@ class Hangman:
             for letter in word:
                 if guess == letter:
                     letter_idx = word.index(letter)
-                    word[letter_idx] = guess
-            num_letters-=1
+                    word_list[letter_idx] = guess
+            num_letters -= 1
+        else:
+            num_lives -= 1
+            print(f"Sorry, {letter} is not in the word")
+            print("You have {num_lives} lives left}")
 
     def ask_for_input(self):
         while True:
