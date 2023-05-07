@@ -35,6 +35,7 @@ class Hangman:
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
+                break
 
 hangman_1 = Hangman(word_list)
 hangman_1.ask_for_input()

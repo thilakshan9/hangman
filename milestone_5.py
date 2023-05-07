@@ -26,6 +26,7 @@ class Hangman:
             print(f"You have {self.num_lives} lives left")
 
     def ask_for_input(self):
+        while True:
             guess = input("Enter a single letter ")
             if len(guess) != 1 or guess.isalpha() == False:
                 print("Invalid letter. Please, enter a single alphabetical character.")
@@ -34,6 +35,7 @@ class Hangman:
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
+                break
 
 
 def play_game(word_list):
