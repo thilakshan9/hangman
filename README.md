@@ -11,3 +11,6 @@ Extended functionality to check if the guess is in the word and sorted code into
 
 # Milestone 3
 Used OOP to contain the thrid milestone of the hangman game and added methods more functionality to deal with how the program handles with a letter being in the word or not.
+
+# Milestone 4
+I defined the whole game by running a while True loop inside a function that will run the ask_for_input method in the Hangman class is the letters have not all been guessed, tell the player that they have lost if they have run out of lives or tell them they have won if they managed to guess the word correctly.
